@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,23 +20,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="621-h4-xGe">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="621-h4-xGe">
                                 <rect key="frame" x="20" y="40" width="335" height="607"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pano" translatesAutoresizingMaskIntoConstraints="NO" id="Ynt-cI-eFh">
-                                        <rect key="frame" x="8" y="8" width="1920" height="689"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1691.5" height="607"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1920" id="A2J-ZD-bG2"/>
                                             <constraint firstAttribute="height" constant="689" id="SlJ-Iq-awE"/>
+                                            <constraint firstAttribute="width" secondItem="Ynt-cI-eFh" secondAttribute="height" multiplier="1920:689" id="qel-9g-2n2"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="Ynt-cI-eFh" firstAttribute="top" secondItem="621-h4-xGe" secondAttribute="top" id="6pA-Os-FwO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ynt-cI-eFh" secondAttribute="trailing" id="BIL-nF-vKb"/>
                                     <constraint firstItem="Ynt-cI-eFh" firstAttribute="top" secondItem="621-h4-xGe" secondAttribute="topMargin" id="BcR-F6-N92"/>
+                                    <constraint firstItem="Ynt-cI-eFh" firstAttribute="leading" secondItem="621-h4-xGe" secondAttribute="leading" id="Qzo-mD-O7Y"/>
                                     <constraint firstItem="Ynt-cI-eFh" firstAttribute="leading" secondItem="621-h4-xGe" secondAttribute="leadingMargin" id="Rto-UO-Lie"/>
+                                    <constraint firstItem="Ynt-cI-eFh" firstAttribute="height" secondItem="621-h4-xGe" secondAttribute="height" id="bvA-Qz-Xqf"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="Ynt-cI-eFh" secondAttribute="trailing" id="khS-0l-vvy"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="Ynt-cI-eFh" secondAttribute="bottom" id="o5R-1u-89U"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ynt-cI-eFh" secondAttribute="bottom" id="sXM-dp-s65"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
