@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="621-h4-xGe">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pano" translatesAutoresizingMaskIntoConstraints="NO" id="Ynt-cI-eFh">
+                                        <rect key="frame" x="8" y="8" width="1920" height="689"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1920" id="A2J-ZD-bG2"/>
+                                            <constraint firstAttribute="height" constant="689" id="SlJ-Iq-awE"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ynt-cI-eFh" firstAttribute="top" secondItem="621-h4-xGe" secondAttribute="topMargin" id="BcR-F6-N92"/>
+                                    <constraint firstItem="Ynt-cI-eFh" firstAttribute="leading" secondItem="621-h4-xGe" secondAttribute="leadingMargin" id="Rto-UO-Lie"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Ynt-cI-eFh" secondAttribute="trailing" id="khS-0l-vvy"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Ynt-cI-eFh" secondAttribute="bottom" id="o5R-1u-89U"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="621-h4-xGe" secondAttribute="bottom" constant="20" id="24e-sU-pWa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="621-h4-xGe" secondAttribute="trailing" constant="20" id="EDi-J2-Nsi"/>
+                            <constraint firstItem="621-h4-xGe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wBZ-tW-B0r"/>
+                            <constraint firstItem="621-h4-xGe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xCl-69-4lH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pano" width="1920" height="689"/>
+    </resources>
+</document>
